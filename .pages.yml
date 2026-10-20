@@ -1,0 +1,146 @@
+media:
+  input: assets
+  output: assets
+  rename: safe
+  extensions:
+  - png
+  - jpg
+  - jpeg
+  - webp
+  - gif
+content:
+- name: website
+  label: Edit Website
+  type: file
+  path: site-content.json
+  format: json
+  fields:
+  - name: branding
+    label: Logo & colors
+    type: object
+    fields:
+    - name: header_logo
+      label: Header logo
+      type: image
+    - name: footer_logo
+      label: Footer logo
+      type: image
+    - name: brown
+      label: Main brand brown (HEX)
+      type: string
+      description: 'Example: #5C2803'
+    - name: cream
+      label: Cream background (HEX)
+      type: string
+      description: 'Example: #F6F5F0'
+  - name: home
+    label: Homepage
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small top line
+      type: string
+    - name: headline
+      label: Main heading
+      type: string
+    - name: headline_script
+      label: Handwritten heading
+      type: string
+    - name: description
+      label: One-sentence description
+      type: text
+    - name: photo
+      label: Big homepage photo
+      type: image
+  - name: gallery_title
+    label: Gallery heading
+    type: string
+  - name: gallery_script
+    label: Gallery handwritten word
+    type: string
+  - name: gallery
+    label: Your installation photos
+    type: object
+    list:
+      min: 1
+      max: 12
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: title
+      label: Photo title
+      type: string
+    - name: subtitle
+      label: Small caption
+      type: string
+    - name: image
+      label: Upload photo
+      type: image
+  - name: menu_title
+    label: Balloon menu heading
+    type: string
+  - name: menu_script
+    label: Balloon menu handwritten word
+    type: string
+  - name: packages
+    label: Balloon packages
+    type: object
+    list:
+      min: 1
+      max: 18
+      collapsible:
+        collapsed: true
+        summary: '{name}'
+    fields:
+    - name: name
+      label: Package name
+      type: string
+    - name: description
+      label: Short description
+      type: text
+    - name: image
+      label: Package graphic or photo
+      type: image
+  - name: shop
+    label: Shop details
+    type: object
+    fields:
+    - name: photo
+      label: Garland photo
+      type: image
+    - name: garland_title
+      label: Garland title
+      type: string
+    - name: garland_description
+      label: Garland description
+      type: text
+    - name: garland_per_foot
+      label: Garland price per foot ($)
+      type: number
+    - name: other_title
+      label: Other products title
+      type: string
+    - name: other_description
+      label: Other products description
+      type: text
+  - name: contact
+    label: Contact text
+    type: object
+    fields:
+    - name: heading
+      label: Heading
+      type: string
+    - name: script
+      label: Handwritten word
+      type: string
+    - name: description
+      label: Short contact text
+      type: text
+  - name: social
+    label: Social media
+    type: object
+    fields:
+    - name: instagram
+      label: Instagram URL
+      type: string
