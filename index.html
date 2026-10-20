@@ -30,6 +30,11 @@
 @media(max-width:780px){.container{width:min(100% - 36px,600px)}.topline{font-size:.55rem;letter-spacing:.1em}.nav{height:66px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;padding:18px;background:var(--bg);border-bottom:1px solid var(--outline);box-shadow:0 15px 24px #00000010;flex-direction:column;gap:16px;align-items:stretch}.navlinks.open{display:flex}.navlinks>a{font-size:.84rem!important;padding:9px}.navlinks .pill{width:100%}.brand-name{font-size:1.4rem}.brand-symbol{width:30px;height:30px}.hero-inner{grid-template-columns:1fr;gap:0;padding:50px 0 65px}.hero-copy{text-align:center}.hero-copy .eyebrow,.hero-buttons,.local-tag{justify-content:center}.hero h1{font-size:clamp(3.1rem,11vw,4.7rem)}.hero h1 em{transform:none}.hero p{margin:20px auto}.hero-art{width:min(100%,480px);margin:35px auto 0;height:410px}.hero-art .image-main{left:6%;width:74%}.hero-sticker{right:1%;top:10%;width:87px;height:87px;font-size:1.14rem}.trust-row{padding:17px 0;gap:13px;flex-direction:column}.trust-item{font-size:.66rem}.section-space{padding:72px 0}.section-heading{display:block}.section-heading .section-desc{margin:15px 0 0}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:11px}.gallery figure{border-radius:13px}.gallery figure.tall{grid-row:span 2}.gallery figure.wide{grid-column:span 1}.gallery figcaption{opacity:1;font-size:.65rem}.service-grid{grid-template-columns:1fr 1fr;gap:11px}.service-card{min-height:315px}.shop-grid{grid-template-columns:1fr}.shop-side{min-height:285px}.steps{grid-template-columns:1fr 1fr;gap:35px 22px}.step:nth-child(2):after{display:none}.faq-container,.contact-grid{grid-template-columns:1fr;gap:33px}.footer-inner{grid-template-columns:1fr 1fr;gap:30px}.footer-inner>:first-child{grid-column:1/-1}.footer-bottom{margin-top:45px}}
 @media(max-width:480px){.container{width:calc(100% - 34px)}.hero h1{font-size:3.2rem}.hero-buttons{flex-direction:column;align-items:stretch;margin:26px 0}.hero-buttons .pill{width:100%}.hero-art{height:365px}.section-title{font-size:2.55rem}.gallery{grid-auto-rows:155px}.gallery figcaption{padding:26px 9px 8px;font-size:.61rem}.service-grid{grid-template-columns:1fr 1fr;gap:8px}.service-card{padding:15px;min-height:310px;border-radius:15px}.service-card h3{font-size:1.35rem}.service-art{width:120px;transform:scale(.88);transform-origin:top center;height:103px}.shop-feature{grid-template-columns:1fr 1fr;min-height:360px}.shop-content{padding:19px 13px}.shop-content h3{font-size:1.66rem}.shop-content p{font-size:.73rem;line-height:1.5}.shop-photo{object-position:center 45%}.shop-content .pill{white-space:normal;min-height:46px;padding:10px 11px;font-size:.7rem}.shop-price{font-size:.84rem}.shop-price small{display:block}.shop-side{padding:28px;min-height:270px}.steps{gap:30px 12px}.step{padding:0}.step-number{width:52px;height:52px;margin-bottom:17px}.step h3{font-size:.88rem}.step p{font-size:.77rem}.step:after{display:none}.form-card{padding:24px 18px}.form-grid{gap:12px}.field input,.field select,.field textarea{padding:11px 10px}.contact-intro{padding-top:0}.choose-grid{grid-template-columns:1fr}.modal-panel{padding:24px}.modal-actions{flex-direction:column}.footer-inner{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Grab-N-Go inquiries use the same form, with just a few contextual fields. */
+.field[hidden],.grab-notice[hidden],.modal-custom-length[hidden]{display:none!important}
+.grab-notice{grid-column:1/-1;margin:0;padding:14px 17px;border:1px solid #e9e2db;background:#fbf6f1;border-radius:14px;color:#665951;font-size:.81rem;line-height:1.65}
+.grab-estimate{grid-column:1/-1;font-size:.83rem;color:#61574f;margin:0;font-weight:600}
 </style>
 <style>
 /* BRANDED, AIRY REFRESH — actual logo palette */
@@ -227,7 +232,7 @@ document.addEventListener('error', function(event){
 <section class="section-space" id="shop"><div class="container"><div class="section-heading"><div><div class="eyebrow">SHOP BALLOON DÉCOR</div><h2 class="section-title">Ready to <span class="handwritten">Pop?</span></h2></div></div>
 <div class="shop-grid"><article class="shop-feature"><img alt="Cream white and soft blue grab and go style balloon garland" class="shop-photo" src="Assets/shop-garland.webp"/><div class="shop-content"><h3>Grab-N-Go Garlands</h3><p>Made by the foot, in your colors.</p><div class="shop-price">$20 / foot <small>before add-ons</small></div><button class="pill pill-dark" id="open-shop" type="button">Explore Sizes <span class="arrow">↗</span></button></div></article>
 <article class="shop-side"><div><h3>Letters &amp; Marquees</h3><p>Custom add-ons for names, ages &amp; milestones.</p><div class="shop-price">Custom pricing <small>based on design</small></div></div><a class="pill pill-white" data-package="Balloon Letter / Marquee" href="#contact">Ask About Custom Add-ons <span class="arrow">↗</span></a></article></div>
-<p class="shop-note">We confirm date, pickup or delivery, and any add-ons before sending a secure payment link.</p>
+<p class="shop-note">Grab-N-Go garlands are pickup only in Brentwood, CA. Submit an inquiry first; we'll confirm your pickup date and any add-ons before sending a Square invoice.</p>
 </div></section>
 <section class="section-space how" id="how"><div class="container"><div class="center-heading"><div class="eyebrow">HOW IT WORKS</div><h2 class="section-title">Simple to <span class="handwritten">Celebrate</span></h2></div><div class="steps">
 <div class="step"><span class="step-number">01</span><h3>Send an Inquiry</h3><p>Your date, location &amp; ideas.</p></div>
@@ -235,21 +240,30 @@ document.addEventListener('error', function(event){
 <div class="step"><span class="step-number">03</span><h3>Secure Your Date</h3><p>Sign the agreement &amp; pay your deposit.</p></div>
 </div></div></section>
 <section class="section-space contact" id="contact"><div class="container contact-grid"><div class="contact-intro"><div class="eyebrow">LET’S CELEBRATE</div><h2 class="section-title">Let’s plan your <span class="handwritten">pop.</span></h2><p class="section-desc">Tell us about your event. We’ll take it from there.</p></div>
-<form class="form-card" id="inquiry-form" action="https://formspree.io/f/mrpevrov" method="POST"><div class="form-top"><h3>Your Event Details</h3><span>* Required</span></div><div class="form-grid">
+<form class="form-card" id="inquiry-form" action="https://formspree.io/f/mrpevrov" method="POST">
+<div class="form-top"><h3 id="form-heading">Your Event Details</h3><span>* Required</span></div>
+<div class="form-grid">
 <div class="field"><label for="client-name">Your name *</label><input autocomplete="name" id="client-name" name="name" placeholder="First and last name" required=""/></div>
 <div class="field"><label for="client-email">Email address *</label><input autocomplete="email" id="client-email" name="email" placeholder="you@example.com" required="" type="email"/></div>
-<div class="field"><label for="event-date">Event date *</label><input id="event-date" name="eventDate" required="" type="date"/></div>
-<div class="field"><label for="event-city">Event city *</label><input id="event-city" name="city" placeholder="e.g. Brentwood, CA" required=""/></div>
-<div class="field"><label for="event-setting">Event setting *</label><select id="event-setting" name="setting" required=""><option disabled="" selected="" value="">Select one</option><option>Indoors</option><option>Outdoors</option><option>Not sure yet</option></select></div>
-<div class="field"><label for="event-service">What are you looking for? *</label><select id="event-service" name="package" required=""><option disabled="" selected="" value="">Choose an option</option><option>Mini Pop</option><option>Classic Pop</option><option>Signature Pop</option><option>Ultimate Pop</option><option>Grab-N-Go Garland</option><option>Balloon Marquee</option><option>Not sure yet</option></select></div>
-<div class="field wide"><label for="event-colors">Theme or balloon colors <span class="optional">(optional)</span></label><input id="event-colors" name="colors" placeholder="e.g. soft blue, cream &amp; white"/></div>
+<div class="field wide"><label for="event-service">What are you looking for? *</label><select id="event-service" name="package" required=""><option disabled="" selected="" value="">Choose an option</option><option>Mini Pop</option><option>Classic Pop</option><option>Signature Pop</option><option>Ultimate Pop</option><option>Grab-N-Go Garland</option><option>Balloon Marquee</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="event-date" id="date-label">Event date *</label><input id="event-date" name="eventDate" required="" type="date"/></div>
+<div class="field" id="event-city-field"><label for="event-city">Event city *</label><input id="event-city" name="city" placeholder="e.g. Brentwood, CA" required=""/></div>
+<div class="field" id="event-setting-field"><label for="event-setting">Event setting *</label><select id="event-setting" name="setting" required=""><option disabled="" selected="" value="">Select one</option><option>Indoors</option><option>Outdoors</option><option>Not sure yet</option></select></div>
+<div class="field" id="garland-length-field" hidden><label for="grab-length">Garland length (feet) *</label><input id="grab-length" name="garlandLengthFt" type="number" min="1" step="0.5" inputmode="decimal" placeholder="e.g. 6" disabled/></div>
+<div class="field" id="pickup-time-field" hidden><label for="grab-pickup-time">Preferred pickup time *</label><input id="grab-pickup-time" name="preferredPickupTime" type="time" disabled/></div>
+<p class="grab-notice" id="grab-notice" hidden>Pickup only · Brentwood, CA. This is an inquiry, not an order confirmation. We'll check availability and email you an invoice after reviewing the details.</p>
+<p class="grab-estimate" id="grab-estimate" aria-live="polite" hidden></p>
+<div class="field wide"><label for="event-colors" id="colors-label">Theme or balloon colors <span class="optional">(optional)</span></label><input id="event-colors" name="colors" placeholder="e.g. soft blue, cream &amp; white"/></div>
 <div class="field wide"><label for="event-inspo">Inspiration link <span class="optional">(optional)</span></label><input id="event-inspo" name="inspo" placeholder="Pinterest / Instagram photo link" type="url"/></div>
-<div class="field wide"><label for="event-notes">Tell us a little more <span class="optional">(optional)</span></label><textarea id="event-notes" name="notes" placeholder="Event type, timing, desired size, backdrop ideas, pickup/delivery or anything else..."></textarea></div>
-</div><p class="form-help">Your event details will be sent directly to us. We’ll be in touch soon.</p><button class="pill pill-dark" type="submit">Send Inquiry <span class="arrow">↗</span></button><div class="form-status" id="form-status" role="status"></div></form>
+<div class="field wide"><label for="event-notes">Tell us a little more <span class="optional">(optional)</span></label><textarea id="event-notes" name="notes" placeholder="Event type, timing, desired size, backdrop ideas, or anything else..."></textarea></div>
+</div>
+<p class="form-help">Your inquiry will be sent directly to us. We'll be in touch to confirm availability and next steps.</p>
+<button class="pill pill-dark" type="submit">Send Inquiry <span class="arrow">↗</span></button><div class="form-status" id="form-status" role="status"></div>
+</form>
 </div></section>
 </main>
 <footer class="footer"><div class="container brand-footer"><img alt="Fuson's Pop &amp; Scoop Co. logo" class="footer-logo" src="Assets/brand-horizontal-user.png"/><div><p>Balloon décor worth celebrating.</p><p>Brentwood, CA &amp; nearby areas</p></div><div class="footer-cta"><a href="#contact">Request a Quote ↗</a><a href="https://www.instagram.com/fusonspopandscoopco/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></div></div><div class="container copyright">© <span id="year"></span> Fuson's Pop &amp; Scoop Co.</div></footer>
-<div aria-hidden="true" aria-label="Grab-N-Go ordering details" aria-modal="true" class="modal" id="shop-modal" role="dialog"><div class="modal-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><div class="eyebrow">SHOP GRAB-N-GO</div><h3>Let's pick your pop!</h3><p>Choose a garland length below. Your final total may include specialty balloons, delivery, outdoor requirements, or other extras.</p><div class="choose-grid"><div class="field"><label for="garland-feet">Garland length</label><select id="garland-feet"><option value="5">5 ft · $100</option><option value="6">6 ft · $120</option><option value="8">8 ft · $160</option><option value="10">10 ft · $200</option><option value="12">12 ft · $240</option><option value="custom">Different length</option></select></div><div class="field"><label for="garland-colors">Preferred colors</label><input id="garland-colors" placeholder="e.g. blue, white, silver"/></div></div><div class="checkout-total"><span>Garland starting estimate</span><strong id="garland-total">$100</strong></div><p class="checkout-note">Card checkout is not active in this preview. We'll confirm your date and pickup/delivery details, then send a secure Square payment link.</p><div class="modal-actions"><button class="pill pill-dark" id="garland-inquiry">Add to My Inquiry <span class="arrow">↗</span></button><button class="pill pill-white" data-close="" type="button">Keep Exploring</button></div></div></div>
+<div aria-hidden="true" aria-label="Grab-N-Go ordering details" aria-modal="true" class="modal" id="shop-modal" role="dialog"><div class="modal-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><div class="eyebrow">GRAB-N-GO · PICKUP ONLY</div><h3>Let's pick your pop!</h3><p>Choose your garland length and balloon colors, then send an inquiry. Pickup is in Brentwood, CA.</p><div class="choose-grid"><div class="field"><label for="garland-feet">Garland length</label><select id="garland-feet"><option value="5">5 ft · $100</option><option value="6">6 ft · $120</option><option value="8">8 ft · $160</option><option value="10">10 ft · $200</option><option value="12">12 ft · $240</option><option value="custom">Different length</option></select></div><div class="field"><label for="garland-colors">Preferred colors</label><input id="garland-colors" placeholder="e.g. blue, white, silver"/></div><div class="field modal-custom-length" id="custom-length-field" hidden><label for="custom-garland-feet">How many feet?</label><input id="custom-garland-feet" type="number" inputmode="decimal" min="1" step="0.5" placeholder="e.g. 7"/></div></div><div class="checkout-total"><span>Garland starting estimate</span><strong id="garland-total">$100</strong></div><p class="checkout-note">Pickup only · Brentwood, CA. No payment is taken here. After you submit your inquiry, we'll confirm availability and send a Square invoice.</p><div class="modal-actions"><button class="pill pill-dark" id="garland-inquiry" type="button">Add to My Inquiry <span class="arrow">↗</span></button><button class="pill pill-white" data-close="" type="button">Keep Exploring</button></div></div></div>
 <div aria-hidden="true" aria-label="Prepared inquiry" aria-modal="true" class="modal" id="result-modal" role="dialog"><div class="modal-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><div class="eyebrow">YOUR INQUIRY IS READY</div><h3>One more little step ♡</h3><p>Your message has been prepared below. Copy it, then send it to us through Instagram so we can review your event details. <strong>This does not send automatically.</strong></p><div class="copy-result" id="prepared-message"></div><div class="modal-actions"><button class="pill pill-dark" id="copy-message" type="button">Copy Inquiry</button><a class="pill pill-white" href="https://ig.me/m/FusonsPopAndScoopCo" rel="noopener noreferrer" target="_blank">Open Instagram DM ↗</a></div><p id="copy-status" role="status" style="font-size:.76rem"></p></div></div>
 <div aria-hidden="true" aria-label="Full size gallery photo" aria-modal="true" class="modal" id="lightbox-modal" role="dialog"><div class="modal-panel lightbox-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><img alt="Selected balloon installation" id="lightbox-image" src="Assets/work-cars.webp"/><p id="lightbox-caption"></p></div></div>
 <script>
@@ -264,12 +278,67 @@ function closeModal(){modals.forEach(m=>m.setAttribute('aria-hidden','true'));do
 modals.forEach(m=>{m.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',closeModal));m.addEventListener('click',e=>{if(e.target===m)closeModal()})});
 document.addEventListener('keydown',e=>{if(e.key==='Escape') closeModal()});
 document.querySelectorAll('.gallery figure').forEach(f=>f.addEventListener('click',()=>{document.getElementById('lightbox-image').src='Assets/'+f.dataset.photo;document.getElementById('lightbox-image').alt=f.querySelector('img').alt;document.getElementById('lightbox-caption').textContent=f.dataset.caption;openModal(document.getElementById('lightbox-modal'))}));
-const service=document.getElementById('event-service'),notes=document.getElementById('event-notes'),colors=document.getElementById('event-colors');
-document.querySelectorAll('[data-package]').forEach(el=>el.addEventListener('click',()=>{service.value=el.dataset.package}));
+const service=document.getElementById('event-service'),colors=document.getElementById('event-colors');
+const eventDate=document.getElementById('event-date'),eventCity=document.getElementById('event-city'),eventSetting=document.getElementById('event-setting');
+const grabLength=document.getElementById('grab-length'),pickupTime=document.getElementById('grab-pickup-time');
+const grabLengthField=document.getElementById('garland-length-field'),pickupTimeField=document.getElementById('pickup-time-field');
+const cityField=document.getElementById('event-city-field'),settingField=document.getElementById('event-setting-field');
+const estimate=document.getElementById('grab-estimate');
+function isGrabNGo(){return /grab[\s-]*n[’']?[\s-]*go/i.test(service.value)}
+function setGrabFields(){
+  const grab=isGrabNGo();
+  grabLengthField.hidden=!grab;pickupTimeField.hidden=!grab;
+  cityField.hidden=grab;settingField.hidden=grab;
+  document.getElementById('grab-notice').hidden=!grab;
+  eventCity.disabled=grab;eventSetting.disabled=grab;
+  eventCity.required=!grab;eventSetting.required=!grab;
+  grabLength.disabled=!grab;pickupTime.disabled=!grab;
+  grabLength.required=grab;pickupTime.required=grab;
+  colors.required=grab;
+  document.getElementById('date-label').textContent=grab?'Requested pickup date *':'Event date *';
+  eventDate.name=grab?'pickupDate':'eventDate';
+  document.getElementById('colors-label').innerHTML=grab?'Balloon colors *':'Theme or balloon colors <span class="optional">(optional)</span>';
+  document.getElementById('form-heading').textContent=grab?'Your Garland Details':'Your Event Details';
+  updateEstimate();
+}
+function updateEstimate(){
+  if(!isGrabNGo()||!Number(grabLength.value)||Number(grabLength.value)<1){estimate.hidden=true;estimate.textContent='';return}
+  estimate.hidden=false;
+  const amount=Number(grabLength.value)*(Number(window.FUSONS_GARLAND_RATE)||20);
+  estimate.textContent='Estimated garland price: $'+amount.toLocaleString('en-US',{maximumFractionDigits:2})+' before any specialty add-ons.';
+}
+service.addEventListener('change',setGrabFields);
+grabLength.addEventListener('input',updateEstimate);
+// Also catches package links created later by Pages CMS.
+document.addEventListener('click',event=>{
+  const link=event.target.closest('[data-package]');if(!link)return;
+  const selected=link.dataset.package;
+  if(![...service.options].some(option=>option.value===selected))service.add(new Option(selected,selected));
+  service.value=selected;
+  setGrabFields();
+});
 const feet=document.getElementById('garland-feet'),total=document.getElementById('garland-total');
+const customFeet=document.getElementById('custom-garland-feet'),customFeetField=document.getElementById('custom-length-field');
 document.getElementById('open-shop').addEventListener('click',()=>openModal(document.getElementById('shop-modal')));
-feet.addEventListener('change',()=>{total.textContent=feet.value==='custom'?'Custom quote':('$'+(Number(feet.value)*(window.FUSONS_GARLAND_RATE||20)))});
-document.getElementById('garland-inquiry').addEventListener('click',()=>{service.value='Grab-N-Go Garland';const length=feet.value==='custom'?'Custom length':feet.value+' ft';notes.value=(notes.value?notes.value+'\n':'')+'Grab-N-Go request: '+length+' ('+(feet.value==='custom'?'price TBD':'starting at $'+Number(feet.value)*(window.FUSONS_GARLAND_RATE||20))+').';if(document.getElementById('garland-colors').value)colors.value=document.getElementById('garland-colors').value;closeModal();document.getElementById('contact').scrollIntoView({behavior:'smooth'});document.getElementById('client-name').focus({preventScroll:true})});
+function updateModalFeet(){
+  const custom=feet.value==='custom';customFeetField.hidden=!custom;
+  const length=Number(custom?customFeet.value:feet.value);
+  total.textContent=length>=1?'$'+(length*(Number(window.FUSONS_GARLAND_RATE)||20)).toLocaleString('en-US',{maximumFractionDigits:2}):'Choose a length';
+}
+feet.addEventListener('change',updateModalFeet);customFeet.addEventListener('input',updateModalFeet);
+document.getElementById('garland-inquiry').addEventListener('click',()=>{
+  const chosen=feet.value==='custom'?Number(customFeet.value):Number(feet.value);
+  if(!Number.isFinite(chosen)||chosen<1||(chosen*2)%1!==0){
+    if(feet.value==='custom'){customFeet.setCustomValidity('Please enter a length in half-foot increments.');customFeet.reportValidity();customFeet.setCustomValidity('');customFeet.focus()}
+    return;
+  }
+  service.value='Grab-N-Go Garland';setGrabFields();
+  grabLength.value=chosen;updateEstimate();
+  if(document.getElementById('garland-colors').value.trim())colors.value=document.getElementById('garland-colors').value.trim();
+  closeModal();document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+  document.getElementById('client-name').focus({preventScroll:true});
+});
+setGrabFields();
 // Submissions go to Formspree; Pages CMS content and site design are unchanged.
 const inquiryForm=document.getElementById('inquiry-form');
 const inquiryStatus=document.getElementById('form-status');
@@ -302,6 +371,7 @@ inquiryForm.addEventListener('submit',async event=>{
     inquiryStatus.textContent='Thank you! Your inquiry has been sent. We’ll be in touch soon.';
     inquiryStatus.style.color='#3d6b4a';
     inquiryForm.reset();
+    setGrabFields();
     inquiryStatus.scrollIntoView({behavior:'smooth',block:'nearest'});
   }catch(error){
     inquiryStatus.textContent=error?.message||'We couldn’t send your inquiry. Please try again.';
