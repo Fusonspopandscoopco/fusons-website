@@ -10,7 +10,7 @@
 <meta content="Custom balloon décor for celebrations big and small in Brentwood, California." property="og:description"/>
 <meta content="website" property="og:type"/>
 <title>Fuson's Pop &amp; Scoop Co. | Balloon Décor in Brentwood</title>
-<link href="assets/brand-icon.png" rel="icon" type="image/png"/>
+<link href="Assets/brand-icon.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -183,10 +183,22 @@ a:hover,.navlinks>a:hover,.text-link:hover{color:#7A4A2A}
 @media(max-width:430px){
   .service-card .menu-photo{height:188px}
 }
-</style></head>
+</style><script>
+// GitHub Pages paths are case-sensitive: support both earlier folder spellings.
+document.addEventListener('error', function(event){
+  var el=event.target;
+  if(!(el instanceof HTMLImageElement)||el.dataset.triedCaseFallback)return;
+  var src=el.getAttribute('src')||'';
+  if(src.startsWith('assets/')||src.startsWith('Assets/')){
+    el.dataset.triedCaseFallback='true';
+    el.src=(src.startsWith('assets/')?'Assets/':'assets/')+src.split('/').slice(1).join('/');
+  }
+}, true);
+</script>
+</head>
 <body>
 <header class="site-header"><nav aria-label="Main navigation" class="container nav">
-<a aria-label="Fuson's Pop and Scoop Co. Home" class="brand" href="#home"><img alt="Fuson's Pop &amp; Scoop Co. logo" class="brand-logo" src="assets/brand-horizontal-user.png"/></a>
+<a aria-label="Fuson's Pop and Scoop Co. Home" class="brand" href="#home"><img alt="Fuson's Pop &amp; Scoop Co. logo" class="brand-logo" src="Assets/brand-horizontal-user.png"/></a>
 <button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menu-toggle" type="button"><span></span><span></span><span></span></button>
 <div class="navlinks" id="navlinks"><a href="#work">Our Work</a><a href="#services">Services</a><a href="#shop">Shop</a><a href="#how">How to Book</a><a class="pill pill-dark" href="#contact">Get a Quote <span class="arrow">↗</span></a></div>
 </nav></header>
@@ -197,23 +209,23 @@ a:hover,.navlinks>a:hover,.text-link:hover{color:#7A4A2A}
 <p>Custom balloon décor for the moments worth celebrating.</p>
 <div class="hero-buttons"><a class="pill pill-dark" href="#contact">Request a Quote <span class="arrow">↗</span></a><a class="pill pill-white" href="#work">View Our Work ↓</a></div>
 </div><div aria-label="Photos of our custom balloon installations" class="hero-art">
-<img alt="Colorful custom balloon backdrop for a Cars-themed birthday celebration" class="image-main" fetchpriority="high" src="assets/hero-cars.webp"/>
+<img alt="Colorful custom balloon backdrop for a Cars-themed birthday celebration" class="image-main" fetchpriority="high" src="Assets/hero-cars.webp"/>
 </div></div></section>
 <section class="section-space" id="work"><div class="container"><div class="section-heading"><div><div class="eyebrow">THE GALLERY</div><h2 class="section-title">A Little Pop of <span class="handwritten">Happiness</span></h2></div></div>
 <div aria-label="Balloon décor photo gallery" class="gallery">
-<figure class="tall" data-caption="Welcome to Radiator Springs" data-photo="work-cars.webp"><img alt="Disney Cars inspired balloon garland surrounding themed backdrop" src="assets/work-cars.webp"/><figcaption>Welcome to Radiator Springs <span>Custom backdrop &amp; balloons</span></figcaption></figure>
-<figure data-caption="A little pop for rescue day" data-photo="work-rescue.webp"><img alt="Powder blue, cream, and white balloon garland" src="assets/work-rescue.webp"/><figcaption>Rescue Day <span>Custom garland</span></figcaption></figure>
-<figure data-caption="Fall celebration" data-photo="work-fall.webp"><img alt="Warm autumn balloon arrangement at Red Robin restaurant" src="assets/work-fall.webp"/><figcaption>Fall Celebration <span>Seasonal installation</span></figcaption></figure>
-<figure data-caption="Every detail matters" data-photo="work-cars-detail.webp"><img alt="Close-up of themed Cars cutout and pastel balloon details" src="assets/work-cars-detail.webp"/><figcaption>Every Detail Matters <span>Custom accents</span></figcaption></figure>
-<figure class="wide" data-caption="Soft blues, big smiles" data-photo="work-rescue-detail.webp"><img alt="Close-up of blue cream and white balloon column with paw print accents" src="assets/work-rescue-detail.webp"/><figcaption>Soft Blues, Big Smiles <span>Rescue event balloon décor</span></figcaption></figure>
+<figure class="tall" data-caption="Welcome to Radiator Springs" data-photo="work-cars.webp"><img alt="Disney Cars inspired balloon garland surrounding themed backdrop" src="Assets/work-cars.webp"/><figcaption>Welcome to Radiator Springs <span>Custom backdrop &amp; balloons</span></figcaption></figure>
+<figure data-caption="A little pop for rescue day" data-photo="work-rescue.webp"><img alt="Powder blue, cream, and white balloon garland" src="Assets/work-rescue.webp"/><figcaption>Rescue Day <span>Custom garland</span></figcaption></figure>
+<figure data-caption="Fall celebration" data-photo="work-fall.webp"><img alt="Warm autumn balloon arrangement at Red Robin restaurant" src="Assets/work-fall.webp"/><figcaption>Fall Celebration <span>Seasonal installation</span></figcaption></figure>
+<figure data-caption="Every detail matters" data-photo="work-cars-detail.webp"><img alt="Close-up of themed Cars cutout and pastel balloon details" src="Assets/work-cars-detail.webp"/><figcaption>Every Detail Matters <span>Custom accents</span></figcaption></figure>
+<figure class="wide" data-caption="Soft blues, big smiles" data-photo="work-rescue-detail.webp"><img alt="Close-up of blue cream and white balloon column with paw print accents" src="Assets/work-rescue-detail.webp"/><figcaption>Soft Blues, Big Smiles <span>Rescue event balloon décor</span></figcaption></figure>
 </div>
 <div class="gallery-actions"><a class="pill pill-white" href="https://www.instagram.com/fusonspopandscoopco/" rel="noopener noreferrer" target="_blank">More on Instagram ↗</a></div>
 </div></section>
 <section class="services section-space" id="services"><div class="container"><div class="center-heading"><div class="eyebrow">OUR BALLOON MENU</div><h2 class="section-title">Find Your <span class="handwritten">Perfect Pop</span></h2></div>
-<div class="service-grid"><article class="service-card"><img alt="Mini Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="assets/menu-mini-user.png"/><h3>Mini Pop</h3><p>A little setup with a big impression.</p><a class="text-link" data-package="Mini Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Classic Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="assets/menu-classic-user.png"/><h3>Classic Pop</h3><p>Our signature backdrop + balloons.</p><a class="text-link" data-package="Classic Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Signature Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="assets/menu-signature-user.png"/><h3>Signature Pop</h3><p>A fuller custom backdrop setup.</p><a class="text-link" data-package="Signature Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Ultimate Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="assets/menu-ultimate-user.png"/><h3>Ultimate Pop</h3><p>A statement setup for larger celebrations.</p><a class="text-link" data-package="Ultimate Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Grab N' Go package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="assets/menu-grabngo-user.png"/><h3>Grab N' Go</h3><p>A pre-made garland ready to install.</p><a class="text-link" data-package="Grab N' Go" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Balloon Letter package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="assets/menu-balloonletter-user.png"/><h3>Balloon Letter</h3><p>A personalized balloon feature for milestone moments.</p><a class="text-link" data-package="Balloon Letter" href="#contact">Get a Quote ↗</a></article></div><p class="services-foot">Package graphics are shown here while we build out the full portfolio.</p>
+<div class="service-grid"><article class="service-card"><img alt="Mini Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="Assets/menu-mini-user.png"/><h3>Mini Pop</h3><p>A little setup with a big impression.</p><a class="text-link" data-package="Mini Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Classic Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="Assets/menu-classic-user.png"/><h3>Classic Pop</h3><p>Our signature backdrop + balloons.</p><a class="text-link" data-package="Classic Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Signature Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="Assets/menu-signature-user.png"/><h3>Signature Pop</h3><p>A fuller custom backdrop setup.</p><a class="text-link" data-package="Signature Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Ultimate Pop package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="Assets/menu-ultimate-user.png"/><h3>Ultimate Pop</h3><p>A statement setup for larger celebrations.</p><a class="text-link" data-package="Ultimate Pop" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Grab N' Go package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="Assets/menu-grabngo-user.png"/><h3>Grab N' Go</h3><p>A pre-made garland ready to install.</p><a class="text-link" data-package="Grab N' Go" href="#contact">Get a Quote ↗</a></article><article class="service-card"><img alt="Balloon Letter package graphic for Fuson's Pop &amp; Scoop Co." class="menu-photo" loading="lazy" src="Assets/menu-balloonletter-user.png"/><h3>Balloon Letter</h3><p>A personalized balloon feature for milestone moments.</p><a class="text-link" data-package="Balloon Letter" href="#contact">Get a Quote ↗</a></article></div><p class="services-foot">Package graphics are shown here while we build out the full portfolio.</p>
 </div></section>
 <section class="section-space" id="shop"><div class="container"><div class="section-heading"><div><div class="eyebrow">SHOP BALLOON DÉCOR</div><h2 class="section-title">Ready to <span class="handwritten">Pop?</span></h2></div></div>
-<div class="shop-grid"><article class="shop-feature"><img alt="Cream white and soft blue grab and go style balloon garland" class="shop-photo" src="assets/shop-garland.webp"/><div class="shop-content"><h3>Grab-N-Go Garlands</h3><p>Made by the foot, in your colors.</p><div class="shop-price">$20 / foot <small>before add-ons</small></div><button class="pill pill-dark" id="open-shop" type="button">Explore Sizes <span class="arrow">↗</span></button></div></article>
+<div class="shop-grid"><article class="shop-feature"><img alt="Cream white and soft blue grab and go style balloon garland" class="shop-photo" src="Assets/shop-garland.webp"/><div class="shop-content"><h3>Grab-N-Go Garlands</h3><p>Made by the foot, in your colors.</p><div class="shop-price">$20 / foot <small>before add-ons</small></div><button class="pill pill-dark" id="open-shop" type="button">Explore Sizes <span class="arrow">↗</span></button></div></article>
 <article class="shop-side"><div><h3>Letters &amp; Marquees</h3><p>Custom add-ons for names, ages &amp; milestones.</p><div class="shop-price">Custom pricing <small>based on design</small></div></div><a class="pill pill-white" data-package="Balloon Letter / Marquee" href="#contact">Ask About Custom Add-ons <span class="arrow">↗</span></a></article></div>
 <p class="shop-note">We confirm date, pickup or delivery, and any add-ons before sending a secure payment link.</p>
 </div></section>
@@ -223,7 +235,7 @@ a:hover,.navlinks>a:hover,.text-link:hover{color:#7A4A2A}
 <div class="step"><span class="step-number">03</span><h3>Secure Your Date</h3><p>Sign the agreement &amp; pay your deposit.</p></div>
 </div></div></section>
 <section class="section-space contact" id="contact"><div class="container contact-grid"><div class="contact-intro"><div class="eyebrow">LET’S CELEBRATE</div><h2 class="section-title">Let’s plan your <span class="handwritten">pop.</span></h2><p class="section-desc">Tell us about your event. We’ll take it from there.</p></div>
-<form class="form-card" id="inquiry-form"><div class="form-top"><h3>Your Event Details</h3><span>* Required</span></div><div class="form-grid">
+<form class="form-card" id="inquiry-form" action="https://formspree.io/f/mrpevrov" method="POST"><div class="form-top"><h3>Your Event Details</h3><span>* Required</span></div><div class="form-grid">
 <div class="field"><label for="client-name">Your name *</label><input autocomplete="name" id="client-name" name="name" placeholder="First and last name" required=""/></div>
 <div class="field"><label for="client-email">Email address *</label><input autocomplete="email" id="client-email" name="email" placeholder="you@example.com" required="" type="email"/></div>
 <div class="field"><label for="event-date">Event date *</label><input id="event-date" name="eventDate" required="" type="date"/></div>
@@ -233,13 +245,13 @@ a:hover,.navlinks>a:hover,.text-link:hover{color:#7A4A2A}
 <div class="field wide"><label for="event-colors">Theme or balloon colors <span class="optional">(optional)</span></label><input id="event-colors" name="colors" placeholder="e.g. soft blue, cream &amp; white"/></div>
 <div class="field wide"><label for="event-inspo">Inspiration link <span class="optional">(optional)</span></label><input id="event-inspo" name="inspo" placeholder="Pinterest / Instagram photo link" type="url"/></div>
 <div class="field wide"><label for="event-notes">Tell us a little more <span class="optional">(optional)</span></label><textarea id="event-notes" name="notes" placeholder="Event type, timing, desired size, backdrop ideas, pickup/delivery or anything else..."></textarea></div>
-</div><p class="form-help">Preview only: your inquiry is prepared for Instagram DM, not automatically submitted.</p><button class="pill pill-dark" type="submit">Prepare My Inquiry <span class="arrow">↗</span></button><div class="form-status" id="form-status" role="status"></div></form>
+</div><p class="form-help">Your event details will be sent directly to us. We’ll be in touch soon.</p><button class="pill pill-dark" type="submit">Send Inquiry <span class="arrow">↗</span></button><div class="form-status" id="form-status" role="status"></div></form>
 </div></section>
 </main>
-<footer class="footer"><div class="container brand-footer"><img alt="Fuson's Pop &amp; Scoop Co. logo" class="footer-logo" src="assets/brand-horizontal-user.png"/><div><p>Balloon décor worth celebrating.</p><p>Brentwood, CA &amp; nearby areas</p></div><div class="footer-cta"><a href="#contact">Request a Quote ↗</a><a href="https://www.instagram.com/fusonspopandscoopco/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></div></div><div class="container copyright">© <span id="year"></span> Fuson's Pop &amp; Scoop Co.</div></footer>
+<footer class="footer"><div class="container brand-footer"><img alt="Fuson's Pop &amp; Scoop Co. logo" class="footer-logo" src="Assets/brand-horizontal-user.png"/><div><p>Balloon décor worth celebrating.</p><p>Brentwood, CA &amp; nearby areas</p></div><div class="footer-cta"><a href="#contact">Request a Quote ↗</a><a href="https://www.instagram.com/fusonspopandscoopco/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></div></div><div class="container copyright">© <span id="year"></span> Fuson's Pop &amp; Scoop Co.</div></footer>
 <div aria-hidden="true" aria-label="Grab-N-Go ordering details" aria-modal="true" class="modal" id="shop-modal" role="dialog"><div class="modal-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><div class="eyebrow">SHOP GRAB-N-GO</div><h3>Let's pick your pop!</h3><p>Choose a garland length below. Your final total may include specialty balloons, delivery, outdoor requirements, or other extras.</p><div class="choose-grid"><div class="field"><label for="garland-feet">Garland length</label><select id="garland-feet"><option value="5">5 ft · $100</option><option value="6">6 ft · $120</option><option value="8">8 ft · $160</option><option value="10">10 ft · $200</option><option value="12">12 ft · $240</option><option value="custom">Different length</option></select></div><div class="field"><label for="garland-colors">Preferred colors</label><input id="garland-colors" placeholder="e.g. blue, white, silver"/></div></div><div class="checkout-total"><span>Garland starting estimate</span><strong id="garland-total">$100</strong></div><p class="checkout-note">Card checkout is not active in this preview. We'll confirm your date and pickup/delivery details, then send a secure Square payment link.</p><div class="modal-actions"><button class="pill pill-dark" id="garland-inquiry">Add to My Inquiry <span class="arrow">↗</span></button><button class="pill pill-white" data-close="" type="button">Keep Exploring</button></div></div></div>
 <div aria-hidden="true" aria-label="Prepared inquiry" aria-modal="true" class="modal" id="result-modal" role="dialog"><div class="modal-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><div class="eyebrow">YOUR INQUIRY IS READY</div><h3>One more little step ♡</h3><p>Your message has been prepared below. Copy it, then send it to us through Instagram so we can review your event details. <strong>This does not send automatically.</strong></p><div class="copy-result" id="prepared-message"></div><div class="modal-actions"><button class="pill pill-dark" id="copy-message" type="button">Copy Inquiry</button><a class="pill pill-white" href="https://ig.me/m/FusonsPopAndScoopCo" rel="noopener noreferrer" target="_blank">Open Instagram DM ↗</a></div><p id="copy-status" role="status" style="font-size:.76rem"></p></div></div>
-<div aria-hidden="true" aria-label="Full size gallery photo" aria-modal="true" class="modal" id="lightbox-modal" role="dialog"><div class="modal-panel lightbox-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><img alt="Selected balloon installation" id="lightbox-image" src="assets/work-cars.webp"/><p id="lightbox-caption"></p></div></div>
+<div aria-hidden="true" aria-label="Full size gallery photo" aria-modal="true" class="modal" id="lightbox-modal" role="dialog"><div class="modal-panel lightbox-panel"><button aria-label="Close" class="modal-close" data-close="" type="button">×</button><img alt="Selected balloon installation" id="lightbox-image" src="Assets/work-cars.webp"/><p id="lightbox-caption"></p></div></div>
 <script>
 (function(){
 const menuButton=document.getElementById('menu-toggle'), links=document.getElementById('navlinks');
@@ -251,15 +263,55 @@ function openModal(modal){previousFocus=document.activeElement;modal.setAttribut
 function closeModal(){modals.forEach(m=>m.setAttribute('aria-hidden','true'));document.body.style.overflow='';if(previousFocus && previousFocus.focus) previousFocus.focus()}
 modals.forEach(m=>{m.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',closeModal));m.addEventListener('click',e=>{if(e.target===m)closeModal()})});
 document.addEventListener('keydown',e=>{if(e.key==='Escape') closeModal()});
-document.querySelectorAll('.gallery figure').forEach(f=>f.addEventListener('click',()=>{document.getElementById('lightbox-image').src='assets/'+f.dataset.photo;document.getElementById('lightbox-image').alt=f.querySelector('img').alt;document.getElementById('lightbox-caption').textContent=f.dataset.caption;openModal(document.getElementById('lightbox-modal'))}));
+document.querySelectorAll('.gallery figure').forEach(f=>f.addEventListener('click',()=>{document.getElementById('lightbox-image').src='Assets/'+f.dataset.photo;document.getElementById('lightbox-image').alt=f.querySelector('img').alt;document.getElementById('lightbox-caption').textContent=f.dataset.caption;openModal(document.getElementById('lightbox-modal'))}));
 const service=document.getElementById('event-service'),notes=document.getElementById('event-notes'),colors=document.getElementById('event-colors');
 document.querySelectorAll('[data-package]').forEach(el=>el.addEventListener('click',()=>{service.value=el.dataset.package}));
 const feet=document.getElementById('garland-feet'),total=document.getElementById('garland-total');
 document.getElementById('open-shop').addEventListener('click',()=>openModal(document.getElementById('shop-modal')));
 feet.addEventListener('change',()=>{total.textContent=feet.value==='custom'?'Custom quote':('$'+(Number(feet.value)*(window.FUSONS_GARLAND_RATE||20)))});
 document.getElementById('garland-inquiry').addEventListener('click',()=>{service.value='Grab-N-Go Garland';const length=feet.value==='custom'?'Custom length':feet.value+' ft';notes.value=(notes.value?notes.value+'\n':'')+'Grab-N-Go request: '+length+' ('+(feet.value==='custom'?'price TBD':'starting at $'+Number(feet.value)*(window.FUSONS_GARLAND_RATE||20))+').';if(document.getElementById('garland-colors').value)colors.value=document.getElementById('garland-colors').value;closeModal();document.getElementById('contact').scrollIntoView({behavior:'smooth'});document.getElementById('client-name').focus({preventScroll:true})});
-let prepared='';document.getElementById('inquiry-form').addEventListener('submit',e=>{e.preventDefault();if(!e.currentTarget.reportValidity())return;const val=id=>document.getElementById(id).value.trim()||'Not provided';prepared=`Hello Fuson's Pop & Scoop Co.! I'd love a quote.\n\nName: ${val('client-name')}\nEmail: ${val('client-email')}\nEvent date: ${val('event-date')}\nEvent city: ${val('event-city')}\nIndoor/outdoor: ${val('event-setting')}\nService: ${val('event-service')}\nTheme/colors: ${val('event-colors')}\nInspiration: ${val('event-inspo')}\nOther details: ${val('event-notes')}\n\nThank you!`;document.getElementById('prepared-message').textContent=prepared;document.getElementById('form-status').textContent='Your inquiry is ready to copy and send via Instagram.';document.getElementById('copy-status').textContent='';openModal(document.getElementById('result-modal'))});
-document.getElementById('copy-message').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(prepared);document.getElementById('copy-status').textContent='Copied! Open Instagram and paste the message into our DM.'}catch(err){document.getElementById('copy-status').textContent='Select the message above and copy it, then paste it into Instagram.'}});
+// Submissions go to Formspree; Pages CMS content and site design are unchanged.
+const inquiryForm=document.getElementById('inquiry-form');
+const inquiryStatus=document.getElementById('form-status');
+const inquiryButton=inquiryForm.querySelector('button[type=submit]');
+let sendingInquiry=false;
+inquiryForm.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(sendingInquiry || !inquiryForm.reportValidity())return;
+  sendingInquiry=true;
+  inquiryButton.disabled=true;
+  inquiryButton.style.opacity='.65';
+  inquiryStatus.textContent='Sending your inquiry…';
+  inquiryStatus.style.color='var(--ink)';
+  try{
+    const response=await fetch(inquiryForm.action,{
+      method:'POST',
+      body:new FormData(inquiryForm),
+      headers:{'Accept':'application/json'}
+    });
+    if(!response.ok){
+      let message='We couldn’t send your inquiry. Please try again in a moment.';
+      try{
+        const details=await response.json();
+        if(Array.isArray(details.errors)&&details.errors[0]?.message){
+          message=details.errors.map(item=>item.message).join(' ');
+        }
+      }catch(_){}
+      throw new Error(message);
+    }
+    inquiryStatus.textContent='Thank you! Your inquiry has been sent. We’ll be in touch soon.';
+    inquiryStatus.style.color='#3d6b4a';
+    inquiryForm.reset();
+    inquiryStatus.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }catch(error){
+    inquiryStatus.textContent=error?.message||'We couldn’t send your inquiry. Please try again.';
+    inquiryStatus.style.color='#ae3838';
+  }finally{
+    sendingInquiry=false;
+    inquiryButton.disabled=false;
+    inquiryButton.style.opacity='';
+  }
+});
 })();
 </script>
 <script defer="True" src="site-content.js"></script></body></html>
