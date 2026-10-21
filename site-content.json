@@ -42,12 +42,12 @@
   "packages": [
     {
       "name": "Mini Pop",
-      "description": "A little setup with a big impression.",
+      "description": "A simple backdrop for smaller celebrations.",
       "image": "assets/packages-1.png"
     },
     {
       "name": "Classic Pop",
-      "description": "Our signature backdrop + balloons.",
+      "description": "Our classic single-backdrop package.",
       "image": "assets/menu-classic-user.png"
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "name": "Ultimate Pop",
-      "description": "A statement setup for larger celebrations.",
+      "description": "A full statement setup for larger celebrations.",
       "image": "assets/menu-ultimate-user.png"
     },
     {
