@@ -16,9 +16,8 @@
   "gallery_script": "Happiness",
   "gallery": [
     {
-      "title": "Welcome to Radiator Springs",
-      "subtitle": "Custom backdrop & balloons",
-      "image": "assets/work-cars.webp"
+      "title": "Pumpkin Garland",
+      "image": "assets/img1896.jpeg"
     },
     {
       "title": "Rescue Day",
@@ -27,8 +26,7 @@
     },
     {
       "title": "Fall Celebration",
-      "subtitle": "Seasonal installation",
-      "image": "assets/work-fall.webp"
+      "subtitle": "Seasonal installation"
     },
     {
       "title": "Every Detail Matters",
@@ -47,7 +45,7 @@
     {
       "name": "Mini Pop",
       "description": "A little setup with a big impression.",
-      "image": "assets/menu-mini-user.png"
+      "image": "assets/packages-1.png"
     },
     {
       "name": "Classic Pop",
